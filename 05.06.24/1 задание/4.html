@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 canvas rectangles</title>
+<script>
+    function draw() {
+        
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(275, 140, 50, 50);
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(275, 410, 50, 50);
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(250, 250, 100, 100);
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(130, 275, 50, 50);
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(420, 275, 50, 50);
+        ctx.fillStyle = 'gray';
+    }
+</script>
+</head>
+
+<body onload="draw();">
+    <canvas id="myCanvas" width="500" height="500">
+    </canvas>
+</body>
+</html> 
